@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsforces"
+version = "0.5.0"
+description = "Compute double-stranded forces in nucleic-acid sequences."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Andrea Di Gioacchino" }]
+
+[project.scripts]
+scan-genome-dsforce = "dsforces.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dsforces*"]
